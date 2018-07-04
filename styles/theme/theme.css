@@ -1,0 +1,9 @@
+@import './variables.css';
+
+:root {
+  --accent: #141820;
+  --general-secondary: #6376a0;
+  --general-tertiary: #7c97d2;
+  --success-secondary: #3fcc7c;
+  --danger-secondary: #ff4747;
+}

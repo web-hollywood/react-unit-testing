@@ -1,0 +1,278 @@
+@import './palette.css';
+
+:root {
+  --transition-time: 0.3s;
+  --body-background: linear-gradient(var(--palette05), var(--palette03));
+
+  --text-primary: var(--palette08);
+  --text-secondary: var(--palette09);
+  --control-disabled: var(--palette08_70);
+  --placeholder-font-color: var(--palette08_40);
+  --primary-font-color: var(--palette10);
+  --text-selected-background: var(--palette02);
+  --text-link: var(--palette13);
+  --primary-background: var(--palette03);
+  --secondary-background: var(--palette04);
+  --tertiary-background: var(--palette02);
+  --link-primary: var(--palette12);
+  --link-primary-hover: var(--palette08);
+  --link-primary-disabled: var(--palette07_75);
+  --border-color: var(--palette01);
+  --border-color-selected: var(--palette08);
+  --border-color-hover: var(--palette08_60);
+  --active-border: var(--palette08);
+  --tertiary-border-color: var(--palette03);
+  --secondary-border-color: var(--palette05);
+  --border-color-4: var(--palette04);
+
+  --spinner-primary-color: var(--palette10);
+  --spinner-secondary-color: var(--palette02);
+  --spinner-tertiary-color: var(--palette05);
+
+  --disabled-font-color: var(--palette08_25);
+  --disabled-background: var(--palette07_75);
+  --input-background: var(--palette07_75);
+  --input-with-label-background: var(--palette09_10);
+  --input-background-hover: var(--palette07);
+  --input-background-focus: var(--palette07);
+  --check-background-hover: var(--palette07_25);
+  --radio-selected-color: var(--palette08);
+  --check-selected-color: var(--palette08_60);
+  --focus-border-color: var(--palette10);
+  --menu-selected-border-color: var(--palette10);
+  --dropdown-background: var(--palette07);
+
+  /* alerts and actions */
+  --success: var(--palette16);
+  --danger: var(--palette14);
+  --change: var(--palette19);
+  --information: var(--palette13);
+
+  /* chart colors */
+  --chart-bullish: var(--palette16);
+  --chart-bearish: var(--palette14);
+  --chart-ema-line: var(--palette19);
+  --chart-price-line: var(--palette13);
+  --chart-sma-line: var(--palette10);
+  --chart-bollinger-band-upper: var(--palette16_75);
+  --chart-bollinger-band-lower: var(--palette14_75);
+  --chart-market-price-line: var(--palette08);
+  --chart-market-price-label: var(--palette08);
+  --chart-market-price-background: var(--palette16_50);
+  --chart-info: var(--palette08);
+  --chart-info-label: var(--palette10);
+  --chart-range: var(--palette08_25);
+
+  /* common elements */
+  --divider: var(--palette01);
+  --divider-secondary: var(--palette03);
+
+  /* buttons */
+  --general-background: var(--palette12_75);
+  --general-background-hover: var(--palette12);
+  --general-background-focus: var(--palette12);
+  --general-background-focus-border: var(--palette13);
+
+  --success-background: var(--palette16_75);
+  --success-background-hover: var(--palette16);
+  --success-background-focus: var(--palette16);
+  --success-background-focus-border: var(--palette17);
+
+  --danger-background: var(--palette14_75);
+  --danger-background-hover: var(--palette14);
+  --danger-background-focus: var(--palette14);
+  --danger-background-focus-border: var(--palette15);
+
+  --change-background: var(--palette19_75);
+  --change-background-hover: var(--palette19);
+  --change-background-focus: var(--palette19);
+  --change-background-focus-border: var(--palette20);
+
+  --default-background: var(--palette03);
+  --default-background-focus: var(--palette02);
+  --default-background-hover: var(--palette01);
+
+  /* input and tabs */
+  --input-border-color: var(--palette10_50);
+  --input-selected-color: var(--palette08);
+  --tab-selected-font-color: var(--palette08);
+  --tab-selected-border: var(--palette12);
+
+  /* modals and overlays */
+  --modal-header-font-color: var(--palette08);
+  --modal-header-background: var(--palette03);
+  --modal-background: var(--palette04);
+  --shadow: var(--palette09_40);
+  --modal-overlay: var(--palette02_60);
+
+  /* trading components */
+  --component-background: var(--palette03);
+  --component-header-background: var(--palette02);
+  --component-header-separator: var(--palette01);
+  --component-tab-background: var(--palette05);
+
+  /* flex-table */
+  --table-background: var(--palette03);
+  --table-font-color: var(--palette10);
+  --table-title-background: var(--palette02);
+  --table-header-background: var(--palette03);
+  --table-header-font-color: var(--palette10);
+  --table-row-background: var(--palette03);
+  --table-row-background-hover: var(--palette01);
+  --table-row-separator: var(--palette01_75);
+
+  /* trading header */
+  --trading-header-height: 5.2rem;
+  --trading-header-background: var(--palette06);
+  --trading-header-info-bar-background: var(--palette02);
+
+  /* instrument bar */
+  --instrument-bar-height: 5.2rem;
+  --instrument-bar-separator: var(--palette06_50);
+
+  /* pop-over menu */
+  --popover-menu-background: var(--palette04);
+  --popover-menu-background-focus: var(--palette07);
+  --popover-menu-background-hover: var(--palette03);
+  --popover-menu-inset-shadow: var(--palette09_90);
+  --popover-menu-font-color: var(--palette11);
+  --popover-menu-separator: var(--palette02);
+  --popover-menu-group-divider: var(--palette10);
+  --popover-menu-arrow-color: var(--palette08);
+
+  /* switch component */
+  --switch-component-border-color: var(--palette11);
+  --switch-component-box-shadow-color: var(--palette10);
+  --switch-component-background-color: var(--palette08);
+  --switch-component-toggle-on-box-shadow: var(--palette16_75);
+
+  /* user summary menu */
+  --user-summary-font-color: var(--palette08);
+  --user-summary-background: var(--palette06);
+  --user-summary-background-hover: var(--palette05);
+  --user-summary-description-font-color: var(--palette10);
+
+  /* side-menu */
+  --side-menu-item-width: 23rem;
+  --side-menu-item-height: 6rem;
+
+  /* standalone-form */
+  --standalone-form-background: url(../../images/login-background.svg);
+  --standalone-form-logo-color: initial;
+  --standalone-form-container-width: 37.6rem;
+  --standalone-form-container-background: var(--palette04);
+  --standalone-form-container-box-shadow: 0 0 3.2rem var(--palette09_25);
+  --standalone-form-header-background: var(--palette03);
+  --standalone-form-header-color: var(--palette08);
+  --standalone-form-header-box-shadow: initial;
+  --standalone-form-button-width: 18rem;
+  --standalone-form-button-height: initial;
+
+  /* standalone-form retail light */
+  /* --standalone-form-background: url(../../images/login-background-light.svg);
+  --standalone-form-logo-color: var(--palette09);
+  --standalone-form-container-width: 41.6rem;
+  --standalone-form-container-background: var(--palette08);
+  --standalone-form-container-box-shadow: 0 0.5rem 4rem 0 var(--palette08_60);
+  --standalone-form-header-background: var(--palette08);
+  --standalone-form-header-color: var(--palette09);
+  --standalone-form-header-box-shadow: 0 0.2rem 0 0 var(--palette13);
+  --standalone-form-button-width: initial;
+  --standalone-form-button-height: 5rem; */
+
+  /* retail-settings-layout */
+  --retail-settings-side-bar-width: 22rem;
+  --retail-settings-main-block-width: calc(
+    100vw - var(--retail-settings-side-bar-width)
+  );
+  --retail-settings-widget-footer-height: 8rem;
+  --retail-settings-widget-footer-button-height: 5rem;
+
+  /* retail header */
+  --retail-header-background: var(--palette05);
+  --retail-header-content-color: var(--palette10);
+  --retail-header-active-item-color: var(--palette08);
+
+  /* wallet overview */
+  --wallet-card-footer: var(--palette06);
+  --wallet-card-subtle-text-color: var(--palette10);
+
+  /* product icon */
+  --product-icon-default-background: var(--palette19);
+
+  /* padding decimal */
+  /* default */
+  --padding-decimal-units: var(--primary-font-color);
+  --padding-decimal-separator: var(--palette11);
+  --padding-decimal-decimals: var(--palette11);
+  --padding-decimal-padding: var(--palette07);
+  /* sell */
+  --padding-decimal-units-sell: var(--palette14_75);
+  --padding-decimal-separator-sell: var(--sell);
+  --padding-decimal-decimals-sell: var(--sell);
+  --padding-decimal-padding-sell: var(--palette14_75);
+  /* buy */
+  --padding-decimal-units-buy: var(--palette16_75);
+  --padding-decimal-separator-buy: var(--buy);
+  --padding-decimal-decimals-buy: var(--buy);
+  --padding-decimal-padding-buy: var(--palette16_50);
+
+  /* snack bar */
+  --snack-progress-bar: var(--palette08_60);
+
+  /* pagination */
+  --pagination-font-color: var(--primary-font-color);
+  --pagination-background-active: var(--palette07_75);
+  --pagination-background-hover: var(--palette06_50);
+  --pagination-font-color-hover: var(--palette11);
+
+  /* tooltip */
+  --tooltip-title-background: var(--palette06);
+  --tooltip-label-color: var(--palette11);
+  --tooltip-data-color: var(--text-primary);
+  --tooltip-background: var(--palette07);
+  --tooltip-border-color: var(--palette07);
+
+  /* inline button */
+  --spread-center-border: var(--palette08_50);
+  --inline-border-button: var(--palette07_75);
+
+  /* scrollbars */
+  --scrollbar-size: 6px;
+  --scrollbar-background: var(--palette02);
+  --scrollbar-thumb-background: var(--palette04);
+  --scrollbar-thumb-background-hover: var(--palette08_25);
+
+  /* label with text */
+  --label-with-data-label-color: var(--primary-font-color);
+  --label-with-data-value-color: var(--text-primary);
+
+  /* z-indexes for different components */
+  --z-index-price-chart: 100;
+  --z-index-popover: 200;
+  --z-index-side-pane: 300;
+  --z-index-modal: 400;
+  --z-index-snackbar: 500;
+  --z-index-date-picker: 1000;
+
+  /* trade colors */
+  --buy: var(--palette16);
+  --sell: var(--palette14);
+  --execute: var(--palette16); /* Unused for now */
+  --cancel: var(--palette14); /* Unused for now */
+  --even: var(--primary-font-color); /* Unused for now */
+
+  /* retail kyc level cards */
+  --kyc-level-component-primary-background: var(--palette02);
+  --kyc-level-component-secondary-background: var(--palette04);
+  --kyc-level-component-star-box-shadow: var(--palette09_25);
+  --kyc-level-component-border-radius: 10px;
+  --kyc-level-component-star-fill: var(--palette13);
+
+  /* UI config */
+  --border-line: 2px solid var(--palette05);
+  --component-header-height: 3.6rem;
+  --body-content-height: calc(100vh - var(--trading-header-height));
+  --typeface: 'SF Pro Display', 'LiberationSans', 'Segoe UI', sans-serif;
+  --typeface-code: monospace, monospace;
+}

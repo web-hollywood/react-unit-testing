@@ -1,0 +1,46 @@
+:root {
+  /* original colors */
+  --palette01: #141820;
+  --palette02: #1b2029;
+  --palette03: #212630;
+  --palette04: #2c313d;
+  --palette05: #323744;
+  --palette06: #3c4150;
+  --palette07: #545a6d;
+  --palette08: #ffffff;
+  --palette09: #000000;
+  --palette10: #969db0;
+  --palette11: #d5d8e3;
+  --palette12: #6376a0;
+  --palette13: #7c97d2;
+  --palette14: #ff4747;
+  --palette15: #f89292;
+  --palette16: #4fcb85;
+  --palette17: #86f3b5;
+  --palette18: #95a2c0;
+  --palette19: #f98530;
+  --palette20: #ffb986;
+
+  /* with transparancy */
+  --palette01_75: rgba(20, 24, 32, 0.75);
+  --palette02_60: rgba(27, 32, 41, 0.6);
+  --palette06_50: rgba(60, 65, 80, 0.5);
+  --palette07_25: rgba(84, 90, 109, 0.25);
+  --palette07_75: rgba(84, 90, 109, 0.75);
+  --palette08_25: rgba(255, 255, 255, 0.25);
+  --palette08_40: rgba(255, 255, 255, 0.4);
+  --palette08_50: rgba(255, 255, 255, 0.5);
+  --palette08_60: rgba(255, 255, 255, 0.6);
+  --palette08_70: rgba(255, 255, 255, 0.7);
+  --palette09_10: rgba(0, 0, 0, 0.1);
+  --palette09_25: rgba(0, 0, 0, 0.25);
+  --palette09_40: rgba(0, 0, 0, 0.4);
+  --palette09_90: rgba(0, 0, 0, 0.9);
+  --palette10_25: rgba(150, 157, 176, 0.25);
+  --palette10_50: rgba(150, 157, 176, 0.5);
+  --palette12_75: rgba(99, 118, 160, 0.75);
+  --palette14_75: rgba(255, 71, 71, 0.75);
+  --palette16_50: rgba(79, 203, 133, 0.5);
+  --palette16_75: rgba(79, 203, 133, 0.75);
+  --palette19_75: rgba(249, 133, 48, 0.75);
+}

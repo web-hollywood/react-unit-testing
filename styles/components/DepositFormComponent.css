@@ -1,0 +1,67 @@
+.deposit-form__title,
+.cryptowallet-withdraw__title {
+  color: var(--text-primary);
+  padding-bottom: 2rem;
+}
+
+.cryptowallet-withdraw__address-container {
+  display: flex;
+  padding: 2rem;
+  background: var(--primary-background);
+  justify-content: space-between;
+  /* font-size: 0.8rem; */
+}
+
+.cryptowallet-withdraw__qrcode {
+  margin-right: 2rem;
+}
+
+.deposit-form__input-wrapper {
+  padding-bottom: 2rem;
+}
+
+.inline__info {
+  width: 100%;
+  text-align: right;
+}
+
+.deposit-form__close__btn {
+  margin-top: 1rem;
+}
+
+.deposit-form__form-body {
+  width: 100%;
+  min-height: 30rem;
+}
+
+.deposit-form__select-label,
+.deposit-form__label {
+  width: 15rem;
+  margin: 0;
+  justify-content: flex-start !important;
+  /* !imp AW-346*/
+}
+
+.deposit-form__input {
+  width: 22rem !important;
+  /* !imp AW-346*/
+}
+
+.deposit-form-select__value-container {
+  width: 17.7rem;
+}
+
+.deposit-form__btn {
+  width: 20rem;
+  margin: 1rem 0;
+}
+
+.deposit-form__template-body,
+.deposit-form__template-footer,
+.deposit-form__error,
+.deposit-form__loading {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  transition: none;
+  border-top: 1px solid var(--divider-secondary);
+}
